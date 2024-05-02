@@ -76,7 +76,7 @@ const Nav = ({ theme, setTheme, navopen, setNavopen, bgcolor}) => {
             </li>
            ))}
         </ul>
-        <NavLink to='/please'>
+        <NavLink to='/MKBHD'>
         <img src={theme === 'dark' ? BDlogo : BLlogo} className={`flex justify-center max-sm:max-h-[3em] max-h-[3.5em] ${scroll ? 'max-h-[3em]' : ''} `}/>
         </NavLink>
 

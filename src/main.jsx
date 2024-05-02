@@ -11,11 +11,11 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css'
 const router = createBrowserRouter([
   {
-    path: "please/",
+    path: "/MKBHD/",
     element: <App />,
   },
   {
-    path: "please/All-Products/",
+    path: "MKBHD/All-Products/",
     element: <Main />,
   },
 ]);
