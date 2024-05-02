@@ -53,7 +53,7 @@ const Shop = () => {
      
         <div className='w-[95vw] flex justify-center'>
           <NavLink to='All-Products/' className='flex flex-row gap-5'>
-          <div className='bg-red-600 px-12 py-4 -skew-x-1 hover:opacity-60 duration-200 hover:cursor-pointer mt-10 mb-5'>
+          <div className='bg-red-600 px-12 py-4 hover:opacity-60 duration-200 hover:cursor-pointer mt-10 mb-5'>
             <h1 className='text-white font-semibold font-poppins text-[1em]'>Browse All Products</h1>
           </div>  
           </NavLink>
