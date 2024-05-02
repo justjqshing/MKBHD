@@ -118,4 +118,5 @@ export const products = [
         price: '$29.00',
         img: 'https://imgproxy.fourthwall.com/jC_TGQdL4FPKf-bo0Qvjqj6DneNvl0evgc5rkqJiUnQ/w:533/sm:1/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2Nkbi5m/b3VydGh3YWxsLmNv/bS9vZmZlci9zaF81/YTEyZTQ2MC0xZTI3/LTQ2ODAtYjIwNi03/NzA3NDI0MjcwM2Ev/Njk0YTkxMTYtMjVm/ZS00Y2I2LThkM2Yt/YzVkMDU0OGNkZTEw/LmpwZWc.webp'
     },
+    
 ]

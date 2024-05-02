@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
 import { faX, faPlus } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
-
+import { NavLink } from 'react-router-dom'
+import Nav from './Nav'
 const Shop = () => {
   const [active, setActive] = useState()
   const rotate = (index) => {
@@ -14,7 +15,7 @@ const Shop = () => {
     <div className="w-[screen] h-[screen] max-sm:p-0 p-6 z-50 bg-zinc-300 dark:bg-zinc-900  overflow-hidden" >
      <div className='grid grid-cols-4 max-xl:grid-cols-2 mb-10'>
       {products.map((item, index) => (
-         <div onMouseEnter={() => rotate(index)} onMouseLeave={() => setActive()} className='flex relative flex-row md:hover:scale-110 duration-200'>
+         <div onMouseEnter={() => rotate(index)} onMouseLeave={() => setActive()} className={`flex relative flex-row md:hover:scale-110 duration-200 ${index > 15 ? 'hidden' : ''}`}>
           <FontAwesomeIcon  icon={faPlus} className={`w-[1.5em] max-sm:w-[0.9em]  h-[1.5em] dark:text-white cursor-pointer p-4  duration-500 ease-in-out ${index == active ? 'md:rotate-[225deg]' : ''}`}/>
           
 
@@ -51,9 +52,11 @@ const Shop = () => {
      </div>
      
         <div className='w-[95vw] flex justify-center'>
+          <NavLink to='All-Products/' className='flex flex-row gap-5'>
           <div className='bg-red-600 px-12 py-4 -skew-x-1 hover:opacity-60 duration-200 hover:cursor-pointer mt-10 mb-5'>
             <h1 className='text-white font-semibold font-poppins text-[1em]'>Browse All Products</h1>
           </div>  
+          </NavLink>
 
         </div>
     </div>

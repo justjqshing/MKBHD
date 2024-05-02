@@ -29,7 +29,7 @@ const Slider = ( {theme} ) => {
           <FontAwesomeIcon icon={item.icon} className='dark:text-white font-poppins dark:dark:text-white w-[1.5em] hover:text-red-600 hover:dark:text-red-600 h-[1.5em] duration-300 cursor-pointer'/>
         ))}
       </div>
-      <div className='flex flex-row gap-5 mt-9 mb-10'>
+      <div className='flex flex-row max-sm:items-center gap-5 mt-9 mb-10'>
         <FontAwesomeIcon icon={faPlus} className='dark:text-white dark:dark:text-white w-[1.5em]   h-[1.5em] duration-300 '/>
         <div className='flex flex-row gap-5 max-sm:flex-col max-sm:items-center'>
 
@@ -49,11 +49,13 @@ const Slider = ( {theme} ) => {
         </div>
         <FontAwesomeIcon icon={faPlus} className='dark:text-white dark:dark:text-white w-[1.5em] h-[1.5em] duration-300 '/>
       </div>
-      <div className='flex flex-row gap-5'>
+      <div className='flex  gap-5 justify-center items-center'>
         <FontAwesomeIcon icon={faPlus} className='dark:text-white dark:dark:text-white w-[1.5em]   h-[1.5em] duration-300 '/>
+        <div className='flex max-sm:flex-col flex-row gap-2 text-center '>
         <h1 className='text-[1em] dark:dark:text-white font-poppins text-BLACK duration-300'>© 2024 MKBHD</h1>
         <h1 className='text-[1em] dark:dark:text-white font-poppins text-BLACK duration-300'>Powered by <span className='hover:dark:text-red-600  hover:text-red-600 duration-300 cursor-pointer'>Josh</span></h1>
-        <FontAwesomeIcon icon={faPlus} className='dark:text-white dark:dark:text-white w-[1.5em]   h-[1.5em] duration-300 '/>
+        </div>
+        <FontAwesomeIcon icon={faPlus} className='dark:text-white dark:dark:text-white w-[1.5em]    h-[1.5em] duration-300 '/>
       </div>
     </div>
     </div>
