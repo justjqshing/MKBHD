@@ -118,5 +118,45 @@ export const products = [
         price: '$29.00',
         img: 'https://imgproxy.fourthwall.com/jC_TGQdL4FPKf-bo0Qvjqj6DneNvl0evgc5rkqJiUnQ/w:533/sm:1/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2Nkbi5m/b3VydGh3YWxsLmNv/bS9vZmZlci9zaF81/YTEyZTQ2MC0xZTI3/LTQ2ODAtYjIwNi03/NzA3NDI0MjcwM2Ev/Njk0YTkxMTYtMjVm/ZS00Y2I2LThkM2Yt/YzVkMDU0OGNkZTEw/LmpwZWc.webp'
     },
+    {
+        name: 'New Studio Scented Candle',
+        price: '$35.00',
+        img: 'https://imgproxy.fourthwall.com/9-yMr_Dq9lw2tkZ9fLwvQ25tJ1dpeC9bgpGsK3nGwkE/w:533/sm:1/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2Nkbi5m/b3VydGh3YWxsLmNv/bS9vZmZlci9zaF81/YTEyZTQ2MC0xZTI3/LTQ2ODAtYjIwNi03/NzA3NDI0MjcwM2Ev/NDFjODg1ZDItNDU1/Yy00MGM5LTlkMjIt/ZTdjZTI2ZDRmNDI4/LmpwZWc.webp'
+    },
+    {
+        name: 'WAVEFORM coffee mug',
+        price: '$16.00',
+        img: 'https://imgproxy.fourthwall.com/wxAVfgDR80h8mB4GUZFbJXcsO8YWS_lddFzRpA_qVCk/w:533/sm:1/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2Nkbi5m/b3VydGh3YWxsLmNv/bS9vZmZlci9zaF81/YTEyZTQ2MC0xZTI3/LTQ2ODAtYjIwNi03/NzA3NDI0MjcwM2Ev/Y2Q0NTExYTktZWQ3/Mi00ZGY4LThhZGIt/YzU2MmUxYjI1YjI4/LmpwZWc.webp'
+    },
+    {
+        name: 'matte black everything t-shirt',
+        price: '$29.00',
+        img: 'https://imgproxy.fourthwall.com/NCrQwXcGHedPj5UQFx-R1iwoGNCBYS4W6JGmAb-qj7U/w:533/sm:1/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2Nkbi5m/b3VydGh3YWxsLmNv/bS9vZmZlci9zaF81/YTEyZTQ2MC0xZTI3/LTQ2ODAtYjIwNi03/NzA3NDI0MjcwM2Ev/MjZmYzYxOTAtMjli/ZS00Njg3LTk2OGEt/MWFlNzI5Yjk5MDFm/LmpwZWc.webp'
+    },
+    {
+        name: 'Black Core Logo t-shirt',
+        price: '$29.00',
+        img: 'https://imgproxy.fourthwall.com/BZjQkWwzF6FC23RnCneOPI0-SjSEZgLu5Y5hhRt_07Q/w:533/sm:1/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2Nkbi5m/b3VydGh3YWxsLmNv/bS9vZmZlci9zaF81/YTEyZTQ2MC0xZTI3/LTQ2ODAtYjIwNi03/NzA3NDI0MjcwM2Ev/YjMyYzc2YTgtNDc3/Yi00ZjBhLWI5OTQt/ZDAzZjE3NjEyNmMy/LmpwZWc.webp'
+    },
+    {
+        name: 'MKBHD x Moment Leather Strap For Apple Watch *Clearance*',
+        price: '$40.00',
+        img: 'https://imgproxy.fourthwall.com/I9OTR2Pnt12DmCH9PKM8fwbfTy0rx4H0ewPmgknHY6Y/w:533/sm:1/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2Nkbi5m/b3VydGh3YWxsLmNv/bS9vZmZlci9zaF81/YTEyZTQ2MC0xZTI3/LTQ2ODAtYjIwNi03/NzA3NDI0MjcwM2Ev/MWU2Zjk2MGQtMmUy/Ni00ZjUzLWI5ZDMt/ZTFmMWMzMDgyOGZh/LmpwZWc.webp'
+    },
+    {
+        name: 'peace t-shirt',
+        price: '$29.00',
+        img: 'https://imgproxy.fourthwall.com/p3F-MNk8lFgfejKlQLpU0Zr7I_Fuoe8J1JjU63bL7bo/w:533/sm:1/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2Nkbi5m/b3VydGh3YWxsLmNv/bS9vZmZlci9zaF81/YTEyZTQ2MC0xZTI3/LTQ2ODAtYjIwNi03/NzA3NDI0MjcwM2Ev/ZWI4Y2YxZWUtNTE1/OC00YzkxLTg3Yjgt/NDI3OTc2YzA4MWI4/LmpwZWc.webp'
+    },
+    {
+        name: 'Core logo hoodie',
+        price: '$45.00',
+        img: 'https://imgproxy.fourthwall.com/TqiBYnX2EPg72KnEphu9uot6kGAuRyp0gtiTWg6cUGU/w:533/sm:1/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2Nkbi5m/b3VydGh3YWxsLmNv/bS9vZmZlci9zaF81/YTEyZTQ2MC0xZTI3/LTQ2ODAtYjIwNi03/NzA3NDI0MjcwM2Ev/ZDc3NWQ4YjItZTIw/MC00OTdjLWJlMTkt/YzhlMjhhMzI4Y2Ex/LmpwZWc.webp'
+    },
+    {
+        name: '6 color hoodie',
+        price: '$30.00',
+        img: 'https://imgproxy.fourthwall.com/Z3eRvXRieJtpHg-na7ct6DeBI_WUb9tj0TJ4ZvGaHGw/w:533/sm:1/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2Nkbi5m/b3VydGh3YWxsLmNv/bS9vZmZlci9zaF81/YTEyZTQ2MC0xZTI3/LTQ2ODAtYjIwNi03/NzA3NDI0MjcwM2Ev/NGUzYWRkM2EtY2Y1/OS00NGRlLTkxNzUt/NTViYzY2ZDA2YzEz/LmpwZWc.webp'
+    },
     
 ]

@@ -8,7 +8,8 @@ import { RiSunFill, RiMoonClearFill, RiMoonFill} from "react-icons/ri";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { BLlogo, BDlogo } from '../assets/Images/index';
-const Nav = ({ theme, setTheme, navopen, setNavopen}) => {
+import { NavLink } from 'react-router-dom';
+const Nav = ({ theme, setTheme, navopen, setNavopen, bgcolor}) => {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         if (theme === 'dark') {
@@ -43,7 +44,7 @@ const Nav = ({ theme, setTheme, navopen, setNavopen}) => {
         damping: 70,
     }
     addEventListener('scroll', () => {
-        if(window.scrollY >= 1){
+        if(window.scrollY >= 20){
             setScroll(true);
         }else{
             setScroll(false);
@@ -52,7 +53,7 @@ const Nav = ({ theme, setTheme, navopen, setNavopen}) => {
 
   return (
     <>
-    <nav className={`w-[99vw] flex fixed max-sm:justify-center justify-between bg-transparent items-center max-sm:hidden max-lg:hidden shop-container ${scroll ? 'dark:bg-zinc-900 bg-zinc-300' : ''}`} >
+    <nav className={`w-[100vw] flex fixed max-sm:justify-center justify-between ${bgcolor ? `${bgcolor}` : 'bg-transparent'} items-center max-sm:hidden max-lg:hidden shop-container ${scroll ? 'dark:bg-zinc-900 bg-zinc-300' : ''}`} >
         <ul className={`flex flex-1 gap-7 items-center max-lg:py-7 max-lg:px-0 p-7 ${scroll ? 'py-3' : ''} `}>
             <li className='ml-10 items-center overflow-y-hidden'>
                 <div onClick={DMtoggle} className={`flex-start flex h-[2.5em] w-[4em]  rounded-[50px] dark:bg-zinc-100 p-[5px] items-center shadow-inner 
@@ -75,8 +76,10 @@ const Nav = ({ theme, setTheme, navopen, setNavopen}) => {
             </li>
            ))}
         </ul>
-        
+        <NavLink to='/please'>
         <img src={theme === 'dark' ? BDlogo : BLlogo} className={`flex justify-center max-sm:max-h-[3em] max-h-[3.5em] ${scroll ? 'max-h-[3em]' : ''} `}/>
+        </NavLink>
+
         
         <ul className={`flex flex-1 items-center gap-7 justify-end p-7 max-xl:gap-3 cursor-pointer ${scroll ? 'py-0' : ''}  `}>
         {LN.map((item) => ( 

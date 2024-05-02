@@ -6,15 +6,26 @@ import React from 'react'
 import Shop from "./Compdents/Shop";
 import Videos from "./Compdents/Videos";
 import Slider from "./Compdents/Slider";
+import ScrollToTop from './Compdents/ScrollToTop'
 const App = () => {
   const [theme, setTheme] = useState(() => String(localStorage.getItem('theme') || 'dark'));
   const [navopen, setNavopen] = useState('hidden');
+  window.addEventListener('blur', () => {
+    document.title = 'Come Back 🥲';
+    
+  })
+  window.addEventListener('focus', () => {
+    document.title = 'Vite + React';
+  })
+
   
   
   
   return (
     <main className="dark:bg-zinc-900 bg-zinc-300">
+      
     <div className="absolute z-10 athic:left-[50%] athic:-translate-x-[50%]">
+      <ScrollToTop/>
       <Nav theme={theme} setTheme={setTheme} setNavopen={setNavopen} navopen={navopen}/>
     </div>
     <div className="z-10">

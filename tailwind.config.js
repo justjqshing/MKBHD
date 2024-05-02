@@ -17,7 +17,7 @@ export default {
       '3.5xl': ['45px', '45px'],
       '4xl': ['48px', '58px'],
       '4xl': ['72px', '87px'],
-      '8xl': ['96px', '106px']
+      '8xl': ['96px', '106px'],
     },
     extend: {
       keyframes: {
@@ -44,6 +44,7 @@ export default {
      
       fontFamily: {
         poppins: ["Poppins"],
+        DMsans: ["DM Sans"],
       },
       backgroundImage:{
         'ModelY': "url('url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-Global.png)",

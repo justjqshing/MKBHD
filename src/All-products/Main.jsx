@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { Profiler } from 'react'
 import Products from './Products'
+import Nav from '../Compdents/Nav'
+import ScrollToTop from '../Compdents/ScrollToTop'
+import { useState } from 'react'
+import Slider from '../Compdents/Slider'
 const Main = () => {
+    const [theme, setTheme] = useState(() => String(localStorage.getItem('theme') || 'dark'));
+  const [navopen, setNavopen] = useState('hidden');
   return (
-    <Products/>
+    <main className="dark:bg-zinc-900 bg-zinc-300">
+        <ScrollToTop/>
+        <div className=" absolute z-10 top-0 athic:left-[50%] athic:-translate-x-[50%]">
+      <Nav theme={theme} setTheme={setTheme} setNavopen={setNavopen} navopen={navopen} bgcolor={'dark:bg-zinc-950'}/>
+    </div>
+    <div className="z-10">
+      <Products/>
+    </div>
+    <div>
+        <Slider theme={theme}/>
+    </div>
+            
+</main>
+
   )
 }
 
