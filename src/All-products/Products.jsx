@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { products } from '../Constants'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 const Products = () => {
     const [active, setActive] = useState()
     const rotate = (index) => {
         setActive(index)
     }
+    const { pathname } = useLocation();
+    
+
   return (
     <div className="w-[screen] h-[screen] max-sm:p-0 p-6 z-50 bg-zinc-300 dark:bg-zinc-900  overflow-hidden mt-24" >
         <div className='flex justify-center mb-12'>

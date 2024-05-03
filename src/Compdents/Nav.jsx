@@ -44,7 +44,7 @@ const Nav = ({ theme, setTheme, navopen, setNavopen, bgcolor}) => {
         damping: 70,
     }
     addEventListener('scroll', () => {
-        if(window.scrollY >= 20){
+        if(window.scrollY >= 50){
             setScroll(true);
         }else{
             setScroll(false);
